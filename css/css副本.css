@@ -120,13 +120,17 @@ a:active {
 .topcontainer .navs .nav:hover{
 	cursor: pointer;	
 }
+
+/* ========== 已修复：隐藏 bj_03.jpg 装备区 ========== */
 .gameIntro1 {
 	width:1920px;height:1727px;left: 50%;margin-left: -960px;
 	overflow: hidden;
 	position: relative;
-	background: url(../images/bj_03.jpg) no-repeat center;
+	background: none !important;
+	display: none !important;
 	background-position: 0px -0px;
 }
+
 .gameIntro2 {
 	width:1920px;height:924px;left: 50%;margin-left: -960px;
 	overflow: hidden;
@@ -770,7 +774,7 @@ img.large_thumb_image {
     width: 1698px;
     height: 2038px;
     position: absolute;
-    /* left: 50%; */
+    /* left: 50% */
     z-index: -2;
     /* margin-left: -270px; */
     }
